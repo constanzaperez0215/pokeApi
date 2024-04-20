@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.menu{
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    color: red;
+}
