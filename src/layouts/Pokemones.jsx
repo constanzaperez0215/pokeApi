@@ -1,22 +1,36 @@
 import { Button } from "react-bootstrap";
 import Cards from "./Cards";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { PokeContext } from "../context/PokeContext";
+import { useNavigate } from "react-router-dom";
 
 
 const Pokemones = () => {
-  // const {pokemon} = useContext(PokeContext)
-  // console.log(pokemon)
+  const {pokemon} = useContext(PokeContext)
+  console.log(pokemon)
+
+  const navigate = useNavigate()
+
+
+  const irAPokemones = (e) => {
+    e.preventDefault()
+    navigate('/pokemon/${name}')
+  }
+  console.log(irAPokemones)
+
   return (
     <div className="selectPoke">
       <h2>Selecciona un pokemon</h2>
       <select className="select form-select" aria-label="Default select example">
-        {/* <option selected >Pokemones</option> */}
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <option>Selecciona</option>
+        {pokemon.map((poke) => {
+          return(
+            <option key={poke.name}>{poke.name}</option>
+          )
+        })}
+
       </select>
-      <Button className="btn btn-dark">Ver Detalle</Button>
+      <Button className="btn btn-dark" onClick={irAPokemones}>Ver Detalle</Button>
       <Cards />
     </div>
   );

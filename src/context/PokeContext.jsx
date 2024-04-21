@@ -8,11 +8,10 @@ const PokeProvider = ({children}) => {
 
   const getData = async () => {
     try {
-      const res = await fetch ('https://pokeapi.co/api/v2/pokemon/')
+      const res = await fetch("https://pokeapi.co/api/v2/pokemon/")
       const data = await res.json()
-      console.log(data)
       setPokemon(data.results)
-      console.log(setPokemon)
+      console.log(nombres)
 
     } catch (error) {
       console.log(error)
@@ -30,4 +29,4 @@ const PokeProvider = ({children}) => {
   )
 }
 
-export default PokeProvider
+export default PokeProvider;
