@@ -5,9 +5,9 @@ const NavBar = () => {
   const setActivaClass = ({ isActive }) => (isActive ? "menu active" : "menu")
 
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar className='navBar' bg="dark" data-bs-theme="dark">
+      <Container >
+        <Navbar.Brand ><img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

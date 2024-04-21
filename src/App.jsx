@@ -6,6 +6,7 @@ import Home from "./layouts/Home"
 import Pokemon from "./layouts/Pokemones"
 import Favoritos from "./layouts/Favoritos"
 import NotFound from "./layouts/NotFound"
+import Cards from "./layouts/Cards"
 
 
 
@@ -20,8 +21,12 @@ const App = () => {
       element={<Home />} />
 
       <Route
-      path='/pokemon'
+      path='/pokemones'
       element={<Pokemon />} />
+
+      <Route
+      path='/pokemones/:name'
+      element={<Cards />} />
 
       <Route
       path='/favoritos'

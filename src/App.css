@@ -1,0 +1,39 @@
+.imgHome{
+    height: 500px;
+    width: 380px;
+    transition: transform 0.3s ease;
+}
+.imgHome:hover{
+    transform: scale(1.1);
+}
+.home{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo{
+    margin: 0;
+    height: 40px;
+    width: 100px;
+}
+
+.selectPoke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+select.select{
+    width: 600px;
+}
+
+Card.card{
+    display: flex;
+    flex-direction: row;
+}
+

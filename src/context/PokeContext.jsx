@@ -7,10 +7,16 @@ const PokeProvider = ({children}) => {
   const [pokemon, setPokemon] = useState([])
 
   const getData = async () => {
-    const res = await fetch ('https://pokeapi.co/api/v2/pokemon/')
-    const data = await res.json()
-    setPokemon(data)
-    console.log(data)
+    try {
+      const res = await fetch ('https://pokeapi.co/api/v2/pokemon/')
+      const data = await res.json()
+      console.log(data)
+      setPokemon(data.results)
+      console.log(setPokemon)
+
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   useEffect(() => {
