@@ -5,14 +5,13 @@ export const PokeContext= createContext()
 const PokeProvider = ({children}) => {
 
   const [pokemon, setPokemon] = useState([])
+  const [name, setName] = useState("")
 
   const getData = async () => {
     try {
-      const res = await fetch("https://pokeapi.co/api/v2/pokemon/")
+      const res = await fetch(`${import.meta.env.VITE_URL}`)
       const data = await res.json()
       setPokemon(data.results)
-      console.log(nombres)
-
     } catch (error) {
       console.log(error)
     }
@@ -23,7 +22,7 @@ const PokeProvider = ({children}) => {
   },[])
 
   return (
-    <PokeContext.Provider value={{pokemon, setPokemon}}>
+    <PokeContext.Provider value={{pokemon, setPokemon, name, setName}}>
       {children}
     </PokeContext.Provider>
   )

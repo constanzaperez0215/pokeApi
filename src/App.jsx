@@ -2,11 +2,13 @@ import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import NavBar from './components/NavBar'
 
+
 import Home from "./layouts/Home"
-import Pokemon from "./layouts/Pokemones"
+import Pokemones from "./layouts/Pokemones"
 import Favoritos from "./layouts/Favoritos"
 import NotFound from "./layouts/NotFound"
 import Cards from "./layouts/Cards"
+
 
 
 
@@ -22,7 +24,7 @@ const App = () => {
 
       <Route
       path='/pokemones'
-      element={<Pokemon />} />
+      element={<Pokemones />} />
 
       <Route
       path='/pokemones/:name'
