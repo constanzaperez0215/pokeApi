@@ -14,8 +14,6 @@ const NavBar = () => {
             <NavLink className={setActivaClass} to="/" >Home</NavLink>
             {"--"}
             <NavLink className={setActivaClass} to="/pokemones">Pokemones</NavLink>
-            {"--"}
-            <NavLink className={setActivaClass} to="/favoritos">Favoritos</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

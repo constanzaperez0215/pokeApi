@@ -1,16 +1,10 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import NavBar from './components/NavBar'
-
-
 import Home from "./layouts/Home"
 import Pokemones from "./layouts/Pokemones"
-import Favoritos from "./layouts/Favoritos"
 import NotFound from "./layouts/NotFound"
 import Cards from "./layouts/Cards"
-
-
-
 
 const App = () => {
   return (
@@ -29,10 +23,6 @@ const App = () => {
       <Route
       path='/pokemones/:name'
       element={<Cards />} />
-
-      <Route
-      path='/favoritos'
-      element={<Favoritos />} />
 
       <Route
       path='*'

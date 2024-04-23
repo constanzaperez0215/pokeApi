@@ -1,5 +1,4 @@
 import { Button } from "react-bootstrap";
-import Cards from "./Cards";
 import { useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
 import { useNavigate } from "react-router-dom";

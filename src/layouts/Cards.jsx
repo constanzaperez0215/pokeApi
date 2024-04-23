@@ -66,7 +66,7 @@ const Cards = () => {
             </ul>
           </div>
           </div>
-          <Button className="btn" onClick={volver} variant="primary">
+          <Button className="btn btn-dark" onClick={volver} variant="primary">
             Volver
           </Button>
         </div>

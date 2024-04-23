@@ -9,7 +9,7 @@ const PokeProvider = ({children}) => {
 
   const getData = async () => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_URL}`)
+      const res = await fetch(`https://pokeapi.co/api/v2/pokemon/`)
       const data = await res.json()
       setPokemon(data.results)
     } catch (error) {
