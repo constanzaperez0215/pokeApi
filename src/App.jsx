@@ -35,7 +35,7 @@ const App = () => {
       element={<Favoritos />} />
 
       <Route
-      path='/*'
+      path='*'
       element={<NotFound />} />
 
     </Routes>

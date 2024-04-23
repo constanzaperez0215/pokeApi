@@ -11,7 +11,7 @@ const Pokemones = () => {
   const navigate = useNavigate()
 
   const irAPokemones = () => {
-    navigate(`/pokemon/${name}`)
+    navigate(`/pokemones/${name}`)
   }
 
   const select = (e) => setName(e.target.value)
@@ -31,7 +31,7 @@ const Pokemones = () => {
 
       </select>
       <Button className="btn btn-dark" disabled={name ===""} onClick={irAPokemones}>Ver Detalle</Button>
-      <Cards />
+
     </div>
   );
 };

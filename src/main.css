@@ -8,3 +8,30 @@
 .active{
     color: red;
 }
+
+.cardPoke{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row
+
+}
+
+.imgCard{
+    height: 400px;
+    width: 400px;
+}
+
+.btn{
+    margin-bottom: 20px;
+}
